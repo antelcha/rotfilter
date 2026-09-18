@@ -1,0 +1,29 @@
+:root{color-scheme:light dark;--accent:#1d9bf0;--danger:#e5484d;--ok:#2e9e44;--border:color-mix(in srgb,currentColor 14%,transparent);--card:color-mix(in srgb,currentColor 3%,transparent);font:15px/1.55 system-ui,-apple-system,sans-serif}
+body{margin:0;color:CanvasText;background:Canvas}
+main{max-width:660px;margin:0 auto;padding:44px 20px 96px;display:grid;gap:18px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:4px}
+.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--accent);flex:none}
+h1{font-size:22px;line-height:1.2;margin:0}
+.lede{margin:2px 0 0;opacity:.6;font-size:13px}
+form{display:grid;gap:18px}
+.card{border:1px solid var(--border);border-radius:14px;padding:22px 24px;background:var(--card)}
+h2{font-size:15px;margin:0 0 4px}
+.hint{margin:0 0 14px;font-size:13.5px;opacity:.65}
+.info ul{margin:8px 0 0;padding-left:20px;display:grid;gap:6px;font-size:13.5px;opacity:.8}
+label{display:grid;gap:7px;font-size:13px;font-weight:500}
+input,textarea{font:inherit;font-weight:400;color:inherit;background:Canvas;border:1px solid var(--border);border-radius:10px;padding:11px 12px;width:100%;box-sizing:border-box}
+input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+input[type=password]{font-family:ui-monospace,monospace;font-size:13.5px}
+textarea{resize:vertical;min-height:110px;line-height:1.5}
+small{display:block;text-align:right;font-size:12px;opacity:.5;margin-top:6px;font-variant-numeric:tabular-nums}
+button{font:inherit;font-size:14px;color:inherit;background:color-mix(in srgb,currentColor 6%,transparent);border:1px solid var(--border);border-radius:10px;padding:9px 16px;cursor:pointer;transition:background .12s,border-color .12s}
+button:hover{background:color-mix(in srgb,currentColor 11%,transparent)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.primary{width:100%;padding:12px;background:var(--accent);border-color:transparent;color:#fff;font-weight:600;border-radius:12px}
+.primary:hover{background:color-mix(in srgb,var(--accent) 88%,#000)}
+.danger{color:var(--danger);border-color:color-mix(in srgb,var(--danger) 35%,transparent)}
+.danger:hover{background:color-mix(in srgb,var(--danger) 12%,transparent)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.save{display:grid;gap:10px}
+#saved,#connection{font-size:13px;color:var(--ok);font-weight:500}
+#saved{text-align:center}

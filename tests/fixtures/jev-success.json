@@ -1,0 +1,9 @@
+{
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+    "matches_show": { "type": "noul", "noul": 0.95 },
+    "matches_dont_show": { "type": "noul", "noul": 0.05 }
+  },
+  "usage": { "input_tokens": 540, "output_tokens": 40, "cost": 0.00002268 },
+  "provider": "TypeSafe"
+}

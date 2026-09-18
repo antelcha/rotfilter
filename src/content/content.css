@@ -1,0 +1,24 @@
+/* Never change tweet height, padding, borders or display. Original content stays
+   in flow so X measures its natural layout, including late-loading media. */
+article[data-rotfilter-masked], article[data-rotfilter-feedback] { position: relative !important; }
+article[data-rotfilter-masked] > :not([data-rotfilter-ui]) {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+article[data-rotfilter-masked] > :not([data-rotfilter-ui]) * { pointer-events: none !important; }
+article > [data-rotfilter-ui] {
+  position: absolute !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  color: inherit !important;
+  background: transparent !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  z-index: 10 !important;
+}
+article > [data-rotfilter-ui="mask"] { inset: 0 !important; }
+article > [data-rotfilter-ui="feedback"] { top: 4px !important; right: 40px !important; }

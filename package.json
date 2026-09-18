@@ -1,0 +1,21 @@
+{
+  "name": "rotfilter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:layout": "npm run build && node scripts/test-layout.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "@types/node": "^22.10.5",
+    "esbuild": "^0.25.0",
+    "jsdom": "^26.0.0",
+    "playwright": "^1.63.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

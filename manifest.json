@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "RotFilter",
+  "version": "0.3.0",
+  "description": "Your quality filter for X.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://openrouter.ai/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_popup": "popup.html", "default_title": "RotFilter" },
+  "options_page": "options.html",
+  "content_scripts": [{
+    "matches": ["https://x.com/*"],
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }]
+}
